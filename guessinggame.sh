@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# File: nestedloops.sh
+# File: guessinggame.sh
 
 function game(){
 	correct_answer=$(ls -l . | egrep -c '^-')
