@@ -2,7 +2,7 @@
 # File: nestedloops.sh
 
 function game(){
-	correct_answer=$(ls -l |grep "^-"|wc -l)
+	correct_answer=$(ls -l . | egrep -c '^-')
 	while true;
 	do
 		echo "How many files do you think are in the directory?"
